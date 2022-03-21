@@ -62,7 +62,7 @@ public class MovimeintoREST {
 
 	
 	
-	@GetMapping
+	@GetMapping (value = "/listarTodasLosMovimiento")
 	private ResponseEntity<List<Movimiento>> listarTodasLosMovimiento (){
 		return ResponseEntity.ok(movimientoService.getAllMovimiento());
 	}

@@ -47,7 +47,7 @@ public class CuentaREST {
 	
 	
 	
-	@GetMapping
+	@GetMapping (value = "/listarTodasLosCuentas")
 	private ResponseEntity<List<Cuenta>> listarTodasLosCuentas (){
 		return ResponseEntity.ok(cuentaService.getAllCuenta());
 	}

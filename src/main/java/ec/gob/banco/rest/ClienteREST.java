@@ -46,7 +46,7 @@ public class ClienteREST {
 
 	
 	
-	@GetMapping
+	@GetMapping (value = "/listarTodasLosClientes")
 	private ResponseEntity<List<Cliente>> listarTodasLosClientes (){
 		return ResponseEntity.ok(clienteService.getAllClientes());
 	}
